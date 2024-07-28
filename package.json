@@ -1,0 +1,35 @@
+{
+  "name": "lokal-js",
+  "version": "0.0.1",
+  "description": "Library for interacting with Lokal.so Client REST API",
+  "main": "dist/lokal.js",
+  "types": "dist/lokal.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokal-so/lokal-js.git"
+  },
+  "keywords": [
+    "lokal",
+    "tunnel"
+  ],
+  "author": "RUBI JIHANTORO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lokal-so/lokal-js/issues"
+  },
+  "homepage": "https://github.com/lokal-so/lokal-js#readme",
+  "devDependencies": {
+    "@types/cli-color": "^2.0.6",
+    "@types/node": "^20.14.12",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "cli-color": "^2.0.4",
+    "semver": "^7.6.3"
+  }
+}
