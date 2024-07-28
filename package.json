@@ -5,6 +5,7 @@
   "main": "dist/lokal.js",
   "types": "dist/lokal.d.ts",
   "scripts": {
+    "prepare": "tsc",
     "build": "tsc",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
