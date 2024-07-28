@@ -2,6 +2,7 @@
   "name": "lokal-js",
   "version": "0.0.1",
   "description": "Library for interacting with Lokal.so Client REST API",
+  "type": "module",
   "main": "dist/lokal.js",
   "types": "dist/lokal.d.ts",
   "scripts": {
