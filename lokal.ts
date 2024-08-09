@@ -245,9 +245,9 @@ class Tunnel implements TunnelData {
     const banner = `
     __       _         _             
    / /  ___ | | ____ _| |  ___  ___  
-  / /  / _ \| |/ / _  | | / __|/ _ \ 
- / /__| (_) |   < (_| | |_\__ \ (_) |
- \____/\___/|_|\_\__,_|_(_)___/\___/ `;
+  / /  / _ \\| |/ / _  | | / __|/ _ \\ 
+ / /__| (_) |   < (_| | |_\\__ \\ (_) |
+ \\____/\\___/|_|\\_\\__,_|_(_)___/\\___/ `;
 
     const colors = [clc.magenta, clc.blue, clc.cyan, clc.green, clc.red];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
