@@ -150,17 +150,21 @@ class Tunnel implements TunnelData {
   }
 
   setLANAddress(lanAddress: string): Tunnel {
-    this.address_mdns = lanAddress.replace(/\.local$/, '');
+    if (lanAddress) {
+      this.address_mdns = lanAddress.replace(/\.local$/, '');
+    } else {
+      this.address_mdns = "";
+    }
     return this;
   }
 
   setPublicAddress(publicAddress: string): Tunnel {
-    this.address_public = publicAddress;
+    this.address_public = publicAddress || "";
     return this;
   }
 
   setName(name: string): Tunnel {
-    this.name = name;
+    this.name = name || "";
     return this;
   }
 
