@@ -259,7 +259,7 @@ class Tunnel implements TunnelData {
       console.log(clc.cyan('Public Address'), `\t\thttps://${this.address_public}`);
     }
     if (this.address_mdns) {
-      console.log(clc.green('LAN Address'), `\t\thttps://${this.address_mdns}.local`);
+      console.log(clc.green('LAN Address'), `\t\thttps://${this.address_mdns}`);
     }
     console.log();
   }
