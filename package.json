@@ -1,6 +1,6 @@
 {
   "name": "lokal-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Library for interacting with Lokal.so Client REST API",
   "type": "module",
   "main": "dist/lokal.js",
@@ -8,6 +8,7 @@
   "scripts": {
     "prepare": "tsc",
     "build": "tsc",
+		"format": "prettier --write .",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,7 +29,8 @@
   "devDependencies": {
     "@types/cli-color": "^2.0.6",
     "@types/node": "^20.14.12",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "prettier": "^3.3.3"
   },
   "dependencies": {
     "cli-color": "^2.0.4",
