@@ -1,5 +1,5 @@
 // lokal.ts
-import clc from 'cli-color';
+import c from 'picocolors';
 
 const ServerMinVersion = '0.6.0';
 
@@ -86,7 +86,7 @@ class Lokal {
 
 	logDebug(...args: any[]): void {
 		if (this.debug) {
-			console.log(clc.yellow('[DEBUG]'), ...args);
+			console.log(c.yellow('[DEBUG]'), ...args);
 		}
 	}
 
@@ -315,17 +315,17 @@ class Tunnel implements TunnelData {
  / /__| (_) |   < (_| | |_\\__ \\ (_) |
  \\____/\\___/|_|\\_\\__,_|_(_)___/\\___/ `;
 
-		const colors = [clc.magenta, clc.blue, clc.cyan, clc.green, clc.red];
+		const colors = [c.magenta, c.blue, c.cyan, c.green, c.red];
 		const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 		console.log(randomColor(banner));
 		console.log();
-		console.log(clc.red('Minimum Lokal Client'), `\t${ServerMinVersion}`);
+		console.log(c.red('Minimum Lokal Client'), `\t${ServerMinVersion}`);
 		if (this.address_public) {
-			console.log(clc.cyan('Public Address'), `\t\thttps://${this.address_public}`);
+			console.log(c.cyan('Public Address'), `\t\thttps://${this.address_public}`);
 		}
 		if (this.address_mdns) {
-			console.log(clc.green('LAN Address'), `\t\thttps://${this.address_mdns}`);
+			console.log(c.green('LAN Address'), `\t\thttps://${this.address_mdns}`);
 		}
 		console.log();
 	}
